@@ -1,9 +1,17 @@
-const calculator = function (num1, num2) {
-    const sum = num1 + num2;
+function sleep() {
 
-    return sum;
+    //let x = false;
+    return new Promise((resolve, reject) => {
+
+        //resolve("Hello World");
+        reject("Bye World");
+
+    })
 }
 
-const sum = calculator(2, 4);
 
-console.log(sum);
+sleep().then((msg) => {
+    console.log(msg);
+}).catch((msg) => {
+    console.log(msg);
+})

@@ -14,21 +14,19 @@ Output: -1
 Explanation: Because there are no elements, return -1.
 */
 
-const myArray = [2, 3, 4, 6]
+const myArray = [2, 3, 4, 6];
 
 //console.log(myArray.length);
 
 Array.prototype.last = function () {
-    let lasElement = this.at(-1)
-    let empty = -1;
-    if (this.length == 0) {
-        return empty;
-    } else {
-        return lasElement;
-    }
-
+  let lasElement = this.at(-1);
+  let empty = -1;
+  if (this.length == 0) {
+    return empty;
+  } else {
+    return lasElement;
+  }
 };
-
 
 let lastValue = myArray.last();
 console.log(lastValue);
